@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:virtual_physix/Screens/home_page.dart';
 import 'package:virtual_physix/Screens/user_registration.dart';
-
 import 'firebase_options.dart';
 
 
@@ -48,6 +47,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.audiowideTextTheme(),
       ),
       home: isLoggedIn ? HomePage() : LoginScreen(),
+      // home: Test(),
     );
   }
 }

@@ -1,6 +1,9 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'sub_chapter_page.dart';
+import 'package:flutter_unity_widget/flutter_unity_widget.dart';
+
+import 'ar_page.dart';
+
 
 List<String> chapters = [
   "Newton's Laws of Motion",
@@ -102,7 +105,7 @@ class _SelectChapterPageState extends State<SelectChapterPage> {
                           context,
                           PageRouteBuilder(
                             pageBuilder: (context, animation, secondaryAnimation) =>
-                            const SelectSubChapterPage(),
+                            const UnityDemoScreen(),
                             transitionsBuilder:
                                 (context, animation, secondaryAnimation, child) {
                               const begin = Offset(1.0, 0.0);
